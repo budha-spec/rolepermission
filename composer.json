@@ -1,0 +1,28 @@
+{
+    "name": "budhaspec/rolepermission",
+    "description": "Allow admin to create module/sub module and assign a permissions to user. User can then access module as per the permission assigned to them.",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Budhaspec\\Rolepermission\\": "src/"
+        },
+        "files": [
+            "src/Helper/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Budhaspec\\Rolepermission\\RolePermissionServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "budha-spec",
+            "email": "budha.jethava@spec-india.com"
+        }
+    ],
+    "require": {}
+}

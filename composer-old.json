@@ -1,0 +1,26 @@
+{
+    "name": "budhaspec/rolepermission",
+    "description": "Assign permission to particular role and that role user can have access to only those module.",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Budhaspec\\Rolepermission\\": "src/"
+        }
+    },
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "Budhaspec\\Rolepermission\\RolePermissionServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "budha-spec",
+            "email": "budha.jethava@spec-india.com"
+        }
+    ],
+    "require": {
+    }
+}
