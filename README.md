@@ -73,7 +73,7 @@ From here, you can:
 ## Permissions Mapping Convention
 
 ```
-Important: THE NAMED ROUTE MUST MATCH THE MODULE or SUB-MODULE NAME; otherwise, IT WON'T WORK.
+Important: THE NAMED ROUTE MUST MATCH THE MODULE.SUB-MODULE NAME; otherwise, IT WON'T WORK.
 ```
 
 From the roles section you can manage roles, Assign permissions (module/sub module) to specific role by clicking on 'Assign Permission' button.  
