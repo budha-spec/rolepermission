@@ -21,10 +21,10 @@ Run the database migrations (ensure your .env file is configured properly):
 php artisan migrate
 ```
 
-Publish the middleware, views, and public assets:
+Publish the public assets:
 
 ```
-php artisan vendor:publish --tag=role-permission --tag=views --tag=public
+php artisan vendor:publish --tag=public
 ```
 
 Update user model as below.
