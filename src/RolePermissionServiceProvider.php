@@ -7,13 +7,6 @@ use Illuminate\Foundation\Configuration\Middleware;
 class RolePermissionServiceProvider extends ServiceProvider
 {
 
-    public function configureMiddleware(Middleware $middleware): void
-    {
-        $middleware->alias([
-            'check.permission' => CheckPermission::class,
-        ]);
-    }
-
     protected function registerHelpers()
     {
         $helpers = __DIR__ . '/Helper/helpers.php';

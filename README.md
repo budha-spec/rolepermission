@@ -27,6 +27,19 @@ Publish the middleware, views, and public assets:
 php artisan vendor:publish --tag=role-permission --tag=views --tag=public
 ```
 
+Update user model as below.
+
+```
+use Budhaspec\Rolepermission\Models\Role;
+
+Add 'role_id' in $fillable array.
+
+Add below relationship.
+
+public function role() {
+    return $this->belongsTo(Role::class, 'role_id');
+}
+```
 
 Start the local development server:
 
@@ -39,6 +52,18 @@ You can now access the server at http://127.0.0.1:8000/
 ## Usage
 
 ## Middleware & Route Protection
+
+Configure middleware in bootstrap/app.php
+
+```
+use Budhaspec\Rolepermission\Http\middleware\CheckPermission;
+
+->withMiddleware(function (Middleware $middleware) {
+      $middleware->alias([
+          'role-permission' => CheckPermission::class,
+      ]);
+  })
+```
 
 Wrap any routes you want protected by roles and permissions inside the role-permission middleware:
 
