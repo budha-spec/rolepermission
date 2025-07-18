@@ -106,7 +106,9 @@ From the roles section you can manage roles, Assign permissions (module/sub modu
 You can assign that Role to specific users for given a grant of that module/sub module.
 
 ```
-Suppose product is module and list, add, edit and delete are sub modules assigned to manager role. Manager role assigned to budha.test@gmail.com user then that user can access product and it's sub module list, add, edit and delete routes.
+Suppose product is module and list, add, edit and delete are sub modules assigned to manager role.
+Manager role assigned to budha.test@gmail.com user then that user can access product and it's
+sub module list, add, edit and delete routes.
 
  Consider the below test cases for product module.
 
